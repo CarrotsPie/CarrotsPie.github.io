@@ -261,14 +261,14 @@ mjx-container[display="true"] + br {
             
             <span class="tag">
                 
-                <a href="/tags/Hexo/" style="color: #ff7d73">
+                <a href="/tags/Hexo/" style="color: #03a9f4">
                     Hexo
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/Github/" style="color: #03a9f4">
+                <a href="/tags/Github/" style="color: #00bcd4">
                     Github
                 </a>
             </span>
@@ -278,62 +278,86 @@ mjx-container[display="true"] + br {
     </div>
     <div class="content" v-pre>
         <p>搭这个博客花了不少时间，就想写一篇教程。</p>
-<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h4 id="前言">前言</h4>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
+Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <p>Markdown 语法的使用可以看 GitHub 官方文档：<a target="_blank" rel="noopener" href="https://docs.github.com/cn/get-started/writing-on-github">基本撰写和格式语法</a></p>
-<h4 id="在本地部署博客"><a href="#在本地部署博客" class="headerlink" title="在本地部署博客"></a>在本地部署博客</h4><p>在创建一个 github page 上的博客前，可以先在本地部署博客，再传到网络上。</p>
-<h5 id="1-安装-Node-js-和-Git"><a href="#1-安装-Node-js-和-Git" class="headerlink" title="1. 安装 Node.js 和 Git"></a>1. 安装 Node.js 和 Git</h5><p>下载网址 <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a>    <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git - Downloads</a></p>
+<span id="more"></span>
+<h4 id="在本地部署博客">在本地部署博客</h4>
+<p>在创建一个 github page
+上的博客前，可以先在本地部署博客，再传到网络上。</p>
+<h5 id="安装-node.js-和-git">1. 安装 Node.js 和 Git</h5>
+<p>下载网址 <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a>    <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git - Downloads</a></p>
 <p>完成后用 <code>node -v</code> 和 <code>git --version</code> 检查，有提示即安装正确</p>
-<h5 id="2-安装-Hexo-CLI"><a href="#2-安装-Hexo-CLI" class="headerlink" title="2. 安装 Hexo CLI"></a>2. 安装 Hexo CLI</h5><p>输入命令 <code>npm i -g hexo</code>， 用 <code>hexo -v</code> 检查安装  </p>
-<p>新建一个文件夹，作为博客目录，cd 进入文件夹，运行 <code>hexo init &amp; npm i</code></p>
-<p>Hexo 官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs">文档 | Hexo</a></p>
-<h5 id="3-Hexo-命令"><a href="#3-Hexo-命令" class="headerlink" title="3. Hexo 命令"></a>3. Hexo 命令</h5><p>生成静态文件    <code>hexo generate</code>    <code>hexo g</code></p>
+<h5 id="安装-hexo-cli">2. 安装 Hexo CLI</h5>
+<p>输入命令 <code>npm i -g hexo</code>，
+用 <code>hexo -v</code> 检查安装</p>
+<p>新建一个文件夹，作为博客目录，cd
+进入文件夹，运行 <code>hexo init &amp; npm i</code></p>
+<p>Hexo 官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs">文档 |
+Hexo</a></p>
+<h5 id="hexo-命令">3. Hexo 命令</h5>
+<p>生成静态文件    <code>hexo generate</code>    <code>hexo g</code></p>
 <p>清除静态文件    <code>hexo clean</code>    <code>hexo cl</code></p>
 <p>在本地运行        <code>hexo server</code>    <code>hexo s</code></p>
 <p>部署到网站        <code>hexo deploy</code>    <code>hexo d</code></p>
 <p>生成静态文件并部署到网站：<code>hexo d -g</code> 或 <code>hexo g -d</code></p>
 <p>创建新文章：<code>hexo new &lt;post-name&gt;</code> <strong><code>&lt;post-name&gt;</code> 为文件名</strong></p>
-<h5 id="4-安装主题"><a href="#4-安装主题" class="headerlink" title="4. 安装主题"></a>4. 安装主题</h5><p>在<a target="_blank" rel="noopener" href="https://hexo.io/themes/">这里</a>选择一个主题</p>
+<h5 id="安装主题">4. 安装主题</h5>
+<p>在<a target="_blank" rel="noopener" href="https://hexo.io/themes/">这里</a>选择一个主题</p>
 <p>在根目录下运行以下指令通过git把主题Clone到本地</p>
 <p><code>&lt;theme-dir&gt;</code> 为主题链接，<code>&lt;theme-name&gt;</code> 为主题名称</p>
-<pre><code class="bash">git clone &lt;theme-dir&gt;.git themes\&lt;theme-name&gt;
-</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="op">&lt;</span>theme-dir<span class="op">&gt;</span>.git themes<span class="dt">\&lt;</span>theme-name<span class="op">&gt;</span></span></code></pre></div>
 <p>我使用的主题是 <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX</a></p>
-<p>在博客根目录下的 <code>_config.yml</code> 中设置 theme 参数为你的主题名称，就可以切换主题，一般主题在 GitHub 项目页下都会有介绍和配置说明。</p>
-<h5 id="5-创建关于页和分类"><a href="#5-创建关于页和分类" class="headerlink" title="5. 创建关于页和分类"></a>5. 创建关于页和分类</h5><p>输入命令 <code>hexo new page categories</code> 创建 Categories 页面</p>
+<p>在博客根目录下的 <code>_config.yml</code> 中设置 theme
+参数为你的主题名称，就可以切换主题，一般主题在 GitHub
+项目页下都会有介绍和配置说明。</p>
+<h5 id="创建关于页和分类">5. 创建关于页和分类</h5>
+<p>输入命令 <code>hexo new page categories</code> 创建 Categories
+页面</p>
 <p>输入命令 <code>hexo new page tags</code> 创建 Tags 页面</p>
-<p> 输入命令<code>hexo new page about</code>创建About关于页，再在md文件内添加内容</p>
-<h5 id="6-网站配置"><a href="#6-网站配置" class="headerlink" title="6.网站配置"></a>6.网站配置</h5><p>打开博客根目录下的 <code>_config.yml</code>，这是一些比较重要的参数，其他可以保持默认</p>
-<pre><code class="yaml">title: # 标题
-subtitle: # 副标题
-description: # 描述
-keywords: # 关键字
-author: # 作者
-language: # 语言
-timezone: # 时区
-url: # 网址
-root: # 根目录
-</code></pre>
-<p>更多配置可以参考<a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration">Hexo 官方文档</a></p>
-<h4 id="将静态网页上传到Github-Page"><a href="#将静态网页上传到Github-Page" class="headerlink" title="将静态网页上传到Github Page"></a>将静态网页上传到Github Page</h4><h5 id="1-新建Github-Page"><a href="#1-新建Github-Page" class="headerlink" title="1. 新建Github Page"></a>1. 新建Github Page</h5><p>新建一个仓库，名称为<code>&lt;name&gt;.github.io</code></p>
+<p>输入命令<code>hexo new page about</code>创建About关于页，再在md文件内添加内容</p>
+<h5 id="网站配置">6.网站配置</h5>
+<p>打开博客根目录下的 <code>_config.yml</code>，这是一些比较重要的参数，其他可以保持默认</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="co"> # 标题</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="co"> # 副标题</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="co"> # 描述</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">keywords</span><span class="kw">:</span><span class="co"> # 关键字</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="co"> # 作者</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">language</span><span class="kw">:</span><span class="co"> # 语言</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">timezone</span><span class="kw">:</span><span class="co"> # 时区</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">url</span><span class="kw">:</span><span class="co"> # 网址</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">root</span><span class="kw">:</span><span class="co"> # 根目录</span></span></code></pre></div>
+<p>更多配置可以参考<a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration">Hexo
+官方文档</a></p>
+<h4 id="将静态网页上传到github-page">将静态网页上传到Github Page</h4>
+<h5 id="新建github-page">1. 新建Github Page</h5>
+<p>新建一个仓库，名称为<code>&lt;name&gt;.github.io</code></p>
 <p>name 是你的用户名</p>
-<h5 id="2-配置-SSH-密钥"><a href="#2-配置-SSH-密钥" class="headerlink" title="2. 配置 SSH 密钥"></a>2. 配置 SSH 密钥</h5><p>在命令行输入命令 <code>ssh-keygen -t rsa -C &lt;email&gt;</code>，获取 SSH 密钥，这个过程会提示你输入一些东西，一直回车就行了。Email 是你注册 Github 的邮箱</p>
-<p>输入命令 <code>notepad %USERPROFILE%\.ssh\id_rsa.pub</code>，打开 SSH 密钥</p>
-<p>打开你 GitHub 右上角的头像中的 Settings 设置，点击左边的 SSH and GPG keys，点击右上角的 New SSH key，将刚才打开的 SSH 密钥复制到 Key 中，点击 Add SSH key 添加密钥</p>
-<p>设置好 SSH 密钥后用 <code>ssh -T git@github.com</code> 检测，如果出现 <code>Hi, xxx! You've successfully authenticated</code> 则配置成功</p>
-<h5 id="3-部署到-GitHub-Pages"><a href="#3-部署到-GitHub-Pages" class="headerlink" title="3. 部署到 GitHub Pages"></a>3. 部署到 GitHub Pages</h5><p>因为默认分支以前是 <code>master</code>，现在是 <code>main</code>，所以如果不把分支名改为 <code>master</code>，就要将 <code>_config.yml</code> 的参数里的 <code>branch: master</code> 改为 <code>branch: main</code></p>
+<h5 id="配置-ssh-密钥">2. 配置 SSH 密钥</h5>
+<p>在命令行输入命令 <code>ssh-keygen -t rsa -C &lt;email&gt;</code>，获取
+SSH 密钥，这个过程会提示你输入一些东西，一直回车就行了。Email 是你注册
+Github 的邮箱</p>
+<p>输入命令 <code>notepad %USERPROFILE%\.ssh\id_rsa.pub</code>，打开 SSH
+密钥</p>
+<p>打开你 GitHub 右上角的头像中的 Settings 设置，点击左边的 SSH and GPG
+keys，点击右上角的 New SSH key，将刚才打开的 SSH 密钥复制到 Key 中，点击
+Add SSH key 添加密钥</p>
+<p>设置好 SSH
+密钥后用 <code>ssh -T git@github.com</code> 检测，如果出现 <code>Hi, xxx! You've successfully authenticated</code> 则配置成功</p>
+<h5 id="部署到-github-pages">3. 部署到 GitHub Pages</h5>
+<p>因为默认分支以前是 <code>master</code>，现在是 <code>main</code>，所以如果不把分支名改为 <code>master</code>，就要将 <code>_config.yml</code> 的参数里的 <code>branch: master</code> 改为 <code>branch: main</code></p>
 <p>使用下面的命令初始配置</p>
-<pre><code class="bash">git config --global user.name "&lt;name&gt;" 
-git config --global user.email "&lt;email&gt;"
-</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"&lt;name&gt;"</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"&lt;email&gt;"</span></span></code></pre></div>
 <p>打开你博客根目录的 <code>_config.yml</code>，设置参数</p>
-<pre><code class="yaml">url: https://&lt;name&gt;.github.io/
-# ...
-deploy:
-    type: git
-    repo: git@github.com:&lt;name&gt;/&lt;name&gt;.github.io.git
-    branch: master
-    message:
-</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">url</span><span class="kw">:</span><span class="at"> https://&lt;name&gt;.github.io/</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ...</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">deploy</span><span class="kw">:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">type</span><span class="kw">:</span><span class="at"> git</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">repo</span><span class="kw">:</span><span class="at"> git@github.com:&lt;name&gt;/&lt;name&gt;.github.io.git</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branch</span><span class="kw">:</span><span class="at"> master</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">message</span><span class="kw">:</span></span></code></pre></div>
 <p>安装部署插件    <code>npm i -S hexo-deployer-git</code></p>
 <p>在博客根目录下使用 <code>hexo d -g</code> 部署到 GitHub Pages</p>
 
